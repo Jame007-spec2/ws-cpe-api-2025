@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 require('dotenv').config();
 
-const db_url = 'mongodb://localhost:27017/workshop_products_db';
+const db_url = 'mongodb://localhost:27017';
 
 exports.connectDB = async () => {
     try {
