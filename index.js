@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 27017
+const port = 3000
 const productRoute = require('./routes/productRoute')
 const morgan = require('morgan')
 const { readdirSync } = require('fs')
