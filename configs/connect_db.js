@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 require('dotenv').config();
 
-const db_url = 'mongodb://mongo:SkQOgQAGnWhjDulqzIkQLVvBeVtgPoKC@ballast.proxy.rlwy.net:40983';
+const db_url = process.env.DB_URL
 
 exports.connectDB = async () => {
     try {
