@@ -18,7 +18,7 @@ exports.addCus = async (req, res) => {
 exports.getAllCus = async (req, res) => {
     try {
         const cuss = await CusModel.find()
-        res.status(200).json(customers)
+        res.status(200).json(cuss)
     } catch (error) {
         console.error('Error fetching products:', error)
         res.status(500).json({ message: 'Internal server error' })
@@ -28,7 +28,7 @@ exports.getCusById = async (req, res) => {
     try {
         const { id } = req.params
         const cusss = await CusModel.findById(id)
-        res.status(200).json(customers)
+        res.status(200).json(cuss)
     } catch (error) {
         console.error('Error fetching products:', error)
         res.status(500).json({ message: 'Internal server error' })
