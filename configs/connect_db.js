@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 require('dotenv').config();
 
-const db_url = process.env.DB_URL
+const db_url = mongodb://mongo:BbVVxiNnWoSsHUjzlDaErBjdEgItDjeH@switchyard.proxy.rlwy.net:10364
 
 exports.connectDB = async () => {
     try {
